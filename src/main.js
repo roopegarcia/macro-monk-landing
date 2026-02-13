@@ -1,6 +1,6 @@
 import './style.css';
 
-const appUrl = 'https://macro-monk.vercel.app/';
+const appUrl = 'https://app.macromonk.fi/';
 
 const copy = {
   en: {

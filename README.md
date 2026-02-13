@@ -8,7 +8,7 @@ Landing page for **Macro Monk**: a macro, training, and body composition tracker
 
 ## Live App
 
-- https://macro-monk.vercel.app/
+- https://app.macromonk.fi/
 
 ## Core Message
 
