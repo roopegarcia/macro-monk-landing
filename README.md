@@ -6,9 +6,10 @@
 
 Landing page for **Macro Monk**: a macro, training, and body composition tracker for people who already take tracking seriously.
 
-## Live App
+## Live URLs
 
-- https://app.macromonk.fi/
+- Landing: https://macromonk.fi/
+- App: https://app.macromonk.fi/
 
 ## Core Message
 
