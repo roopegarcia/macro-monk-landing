@@ -14,6 +14,7 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -211,6 +212,81 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.difference-steps {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.7rem;
+  font-weight: 700;
+}
+
+.difference-auth {
+  margin: 0 0 0.9rem;
+  display: inline-block;
+  padding: 0.4rem 0.65rem;
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.difference-steps li {
+  line-height: 1.4;
+}
+
+.difference-note {
+  margin: 1rem 0 0;
+  max-width: 80ch;
+  background: var(--surface);
+  border: 2px solid var(--line);
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.pricing {
+  padding: 2.3rem 0 0.2rem;
+}
+
+.pricing-intro {
+  margin: 0;
+  color: var(--muted);
+}
+
+.pricing-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.price-card {
+  background: var(--surface);
+  border: 2px solid var(--line);
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+}
+
+.price-card.trial {
+  background: linear-gradient(180deg, #fff8ec 0%, #f8ead8 100%);
+}
+
+.plan-name {
+  margin: 0;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.plan-price {
+  margin: 0.35rem 0 0;
+  font-size: clamp(1.25rem, 2.4vw, 1.55rem);
+  font-weight: 800;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -337,6 +413,10 @@ h3 {
   }
 
   .body-comp-list {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-grid {
     grid-template-columns: 1fr;
   }
 

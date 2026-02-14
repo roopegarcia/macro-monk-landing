@@ -5,22 +5,28 @@ const appUrl = 'https://app.macromonk.fi/';
 const copy = {
   en: {
     openApp: 'Open app',
-    eyebrow: 'For lifters, athletes, and precision nerds',
+    eyebrow: 'For lifters and athletes',
     h1: 'Track macros and training without getting sold every 30 seconds.',
     lede:
       'Most trackers pretend to be free, then choke your setup with tiny limits, ads, and endless "buy Pro" popups. Macro Monk stays clean: practical logging, serious tracking, zero manipulative funnel.',
+    authLine: 'Google auth, no password-lost hassle.',
     startTracking: 'Start tracking',
     seeDifference: 'See the difference',
-    differenceTitle: 'What makes Macro Monk different',
-    card1Title: 'No fake scarcity',
-    card1Body:
-      'You are not boxed into "3 custom meals" just to force an upgrade. Log real life, not a demo version of your life.',
-    card2Title: 'No ad bombardment',
-    card2Body:
-      'No feed spam, no interstitial junk, no "watch this ad to continue" pattern. Your focus stays on training.',
-    card3Title: 'Built for people who already know',
-    card3Body:
-      'Macro Monk assumes you understand macros, progression, and consistency. It gives control instead of handholding fluff.',
+    differenceTitle: 'See the difference',
+    differenceStep1: 'Insert your macro and calorie target.',
+    differenceStep2: 'Eat and enjoy life.',
+    differenceStep3: 'Macros and calories update so you know exactly how much is left for the day.',
+    differenceBody1:
+      'Build your own food database so you do not rely on vague and often wrong nutrition values. No pre-made database dependencies. Just your own values. No one is going to cap your items and push a fake Pro wall.',
+    differenceBody2:
+      'Copy previous day meals (because we both know you are eating mostly the same foods every day). Consistency is everything, and this is a long-term game.',
+    pricingTitle: 'Simple pricing',
+    pricingIntro: 'Stripe payment. No hidden layers.',
+    monthlyPlan: 'Monthly',
+    monthlyPrice: '€8/month',
+    yearlyPlan: 'Yearly',
+    yearlyPrice: '€69/year',
+    freeTrial: 'Free trial for 7 days.',
     bodyCompTitle: 'Body composition tracking that makes sense',
     bodyCompBody:
       'Daily scale weight jumps are noisy. Macro Monk tracks a running 7-day average, calculates weekly changes, and estimates lean body mass when you log body-fat %.',
@@ -33,22 +39,28 @@ const copy = {
   },
   fi: {
     openApp: 'Avaa sovellus',
-    eyebrow: 'Nostajille, urheilijoille ja tarkkuusnörteille',
-    h1: 'Seuraa makroja ja treeniä ilman jatkuvaa myyntipainetta.',
+    eyebrow: 'Treenaajille ja urheilijoille',
+    h1: 'Seuraa makroja ja treeniä ilman mainoksia.',
     lede:
       'Useimmat trackerit väittävät olevansa ilmaisia, mutta rajoittavat käyttöä pienillä limiteillä, mainoksilla ja loputtomilla "osta Pro" -kehotuksilla. Macro Monk pysyy puhtaana: käytännöllinen kirjaus, vakava seuranta, ei manipuloivaa myyntifunnelia.',
+    authLine: 'Google-kirjautuminen, ei salasanasäätöä.',
     startTracking: 'Aloita seuranta',
     seeDifference: 'Katso ero',
-    differenceTitle: 'Miksi Macro Monk on erilainen',
-    card1Title: 'Ei tekaistua niukkuutta',
-    card1Body:
-      'Et jää jumiin "3 omaa ateriaa" -rajoihin vain siksi, että sinut pakotetaan ostamaan lisäversio. Kirjaa oikeaa arkea, ei demoversiota elämästäsi.',
-    card2Title: 'Ei mainostulitusta',
-    card2Body:
-      'Ei feed-spämmiä, ei häiritseviä välimainoksia, ei "katso mainos jatkaaksesi" -mallia. Fokus pysyy treenissä.',
-    card3Title: 'Tehty niille, jotka jo tietävät',
-    card3Body:
-      'Macro Monk olettaa, että ymmärrät makrot, progression ja johdonmukaisuuden. Saat hallintaa ilman turhaa höttöä.',
+    differenceTitle: 'Katso ero',
+    differenceStep1: 'Aseta makro- ja kaloriteavoitteesi.',
+    differenceStep2: 'Syö hyvin ja elä normaalisti.',
+    differenceStep3: 'Makrot ja kalorit päivittyvät, joten tiedät tarkasti paljonko päivälle on jäljellä.',
+    differenceBody1:
+      'Rakenna oma ruokadatasi, jotta et ole epämääräisten ja usein väärien ravintoarvojen varassa. Ei valmiiden tietokantojen pakkoa. Vain omat arvosi. Kukaan ei rajoita item-määriä ja pakota Pro-seinän taakse.',
+    differenceBody2:
+      'Kopioi edellisen päivän ateriat (koska molemmat tiedämme, että syöt useimmiten samoja ruokia joka päivä). Johdonmukaisuus on kaikki kaikessa, ja tämä on pitkä peli.',
+    pricingTitle: 'Yksinkertainen hinnoittelu',
+    pricingIntro: 'Maksut Stripellä. Ei piilokerroksia.',
+    monthlyPlan: 'Kuukausi',
+    monthlyPrice: '8 €/kk',
+    yearlyPlan: 'Vuosi',
+    yearlyPrice: '69 €/vuosi',
+    freeTrial: '7 päivän ilmainen kokeilu.',
     bodyCompTitle: 'Järkevä kehonkoostumuksen seuranta',
     bodyCompBody:
       'Päivittäinen paino heittelee paljon. Macro Monk seuraa liukuvaa 7 päivän keskiarvoa, laskee viikkokohtaiset muutokset ja arvioi rasvattoman massan, kun kirjaat rasvaprosentin.',
@@ -99,7 +111,7 @@ const render = () => {
           <p class="lede">${t.lede}</p>
           <div class="hero-actions">
             <a class="button primary" href="${appUrl}" target="_blank" rel="noreferrer">${t.startTracking}</a>
-            <a class="button ghost" href="#difference">${t.seeDifference}</a>
+            <a class="button ghost" href="#see-the-difference">${t.seeDifference}</a>
           </div>
         </div>
 
@@ -110,20 +122,33 @@ const render = () => {
         </div>
       </section>
 
-      <section id="difference" class="difference container reveal">
+      <section id="see-the-difference" class="difference container reveal">
         <h2>${t.differenceTitle}</h2>
-        <div class="grid">
-          <article class="card">
-            <h3>${t.card1Title}</h3>
-            <p>${t.card1Body}</p>
+        <p class="difference-auth">${t.authLine}</p>
+        <ol class="difference-steps">
+          <li>${t.differenceStep1}</li>
+          <li>${t.differenceStep2}</li>
+          <li>${t.differenceStep3}</li>
+        </ol>
+        <p class="difference-note">${t.differenceBody1}</p>
+        <p class="difference-note">${t.differenceBody2}</p>
+      </section>
+
+      <section class="pricing container reveal-delay">
+        <h2>${t.pricingTitle}</h2>
+        <p class="pricing-intro">${t.pricingIntro}</p>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <p class="plan-name">${t.monthlyPlan}</p>
+            <p class="plan-price">${t.monthlyPrice}</p>
           </article>
-          <article class="card">
-            <h3>${t.card2Title}</h3>
-            <p>${t.card2Body}</p>
+          <article class="price-card">
+            <p class="plan-name">${t.yearlyPlan}</p>
+            <p class="plan-price">${t.yearlyPrice}</p>
           </article>
-          <article class="card">
-            <h3>${t.card3Title}</h3>
-            <p>${t.card3Body}</p>
+          <article class="price-card trial">
+            <p class="plan-name">Trial</p>
+            <p class="plan-price">${t.freeTrial}</p>
           </article>
         </div>
       </section>
