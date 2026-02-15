@@ -206,6 +206,20 @@ h1 {
   padding: 2.6rem 0 0;
 }
 
+.feature-sticker {
+  position: absolute;
+  top: 1.05rem;
+  right: 1rem;
+  width: clamp(110px, 12.6vw, 152px);
+  transform: rotate(21deg);
+  z-index: 3;
+}
+
+.feature-sticker img {
+  width: 100%;
+  filter: drop-shadow(0 8px 14px rgba(35, 31, 22, 0.2));
+}
+
 h2 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(1.8rem, 5vw, 2.7rem);
@@ -312,7 +326,16 @@ h3 {
 }
 
 .body-comp {
-  padding: 2.4rem 0 0.3rem;
+  position: relative;
+  margin-top: 2.1rem;
+  padding: 1.3rem 1.05rem 1.05rem;
+  border: 2px solid var(--line);
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(255, 251, 242, 0.92) 0%, rgba(247, 233, 213, 0.88) 100%);
+}
+
+.body-comp h2 {
+  max-width: calc(100% - 173px);
 }
 
 .body-comp-lede {
@@ -327,16 +350,17 @@ h3 {
   padding: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.85rem;
 }
 
 .body-comp-list li {
-  background: var(--surface);
+  background: #fffefb;
   border: 2px solid var(--line);
   border-radius: 14px;
   padding: 0.85rem 0.95rem;
   font-weight: 600;
+  box-shadow: 0 8px 18px rgba(35, 31, 22, 0.08);
 }
 
 .promise {
@@ -406,6 +430,20 @@ h3 {
     max-width: 420px;
     width: 100%;
     justify-self: start;
+  }
+
+  .feature-sticker {
+    /*position: relative;
+    top: auto;
+    right: auto;
+    width: 92px;
+    transform: rotate(9deg);
+    margin: 0 0 0.6rem auto; */
+    display: none;
+  }
+
+  .body-comp h2 {
+    max-width: none;
   }
 
   .grid {

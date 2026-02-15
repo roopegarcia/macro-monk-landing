@@ -1,4 +1,5 @@
 import './style.css';
+import noSpamDonut from './assets/images/no-spam-donut-sticker.png';
 
 const appUrl = 'https://app.macromonk.fi/';
 
@@ -10,10 +11,11 @@ const copy = {
     lede:
       'Most trackers pretend to be free, then choke your setup with tiny limits, ads, and endless "buy Pro" popups. Macro Monk stays clean: practical logging, serious tracking, zero manipulative funnel.',
     authLine: 'Google auth, no password-lost hassle.',
+    stickerAlt: 'No-spam tracking sticker',
     startTracking: 'Start tracking',
     seeDifference: 'See the difference',
     differenceTitle: 'See the difference',
-    differenceStep1: 'Insert your macro and calorie target.',
+    differenceStep1: 'Set your macro and calorie target, then choose your phase: Cut, Bulk, or Maintain.',
     differenceStep2: 'Eat and enjoy life.',
     differenceStep3: 'Macros and calories update so you know exactly how much is left for the day.',
     differenceBody1:
@@ -27,12 +29,13 @@ const copy = {
     yearlyPlan: 'Yearly',
     yearlyPrice: '€69/year',
     freeTrial: 'Free trial for 7 days.',
-    bodyCompTitle: 'Body composition tracking that makes sense',
+    bodyCompTitle: 'Body composition and phase tracking that make sense',
     bodyCompBody:
-      'Daily scale weight jumps are noisy. Macro Monk tracks a running 7-day average, calculates weekly changes, and estimates lean body mass when you log body-fat %.',
+      'Daily scale weight jumps are noisy. Macro Monk tracks running 7-day averages, calculates weekly changes, lets you run your diet phase (Cut, Bulk, or Maintain), and gives feedback on how your progress is going.',
     bodyCompPoint1: 'Running 7-day averages to smooth daily noise',
     bodyCompPoint2: 'Weekly change calculations for real trend insight',
-    bodyCompPoint3: 'Lean body mass tracking when body-fat % is logged',
+    bodyCompPoint3: 'Phase selection with progress feedback: Cut, Bulk, or Maintain',
+    bodyCompPoint4: 'Lean body mass tracking when body-fat % is logged',
     quote:
       '"Macro Monk is the tracker I wanted: direct, fast, and respectful of people who are serious about results."',
     tryMacroMonk: 'Try Macro Monk'
@@ -44,10 +47,11 @@ const copy = {
     lede:
       'Useimmat trackerit väittävät olevansa ilmaisia, mutta rajoittavat käyttöä pienillä limiteillä, mainoksilla ja loputtomilla "osta Pro" -kehotuksilla. Macro Monk pysyy puhtaana: käytännöllinen kirjaus, vakava seuranta, ei manipuloivaa myyntifunnelia.',
     authLine: 'Google-kirjautuminen, ei salasanasäätöä.',
+    stickerAlt: 'Ei spämmimyyntiä -tarra',
     startTracking: 'Aloita seuranta',
     seeDifference: 'Katso ero',
     differenceTitle: 'Katso ero',
-    differenceStep1: 'Aseta makro- ja kaloriteavoitteesi.',
+    differenceStep1: 'Aseta makro- ja kaloritavoitteesi, ja valitse vaihe: rasvanpoltto, lihaskasvu tai ylläpito.',
     differenceStep2: 'Syö hyvin ja elä normaalisti.',
     differenceStep3: 'Makrot ja kalorit päivittyvät, joten tiedät tarkasti paljonko päivälle on jäljellä.',
     differenceBody1:
@@ -61,12 +65,13 @@ const copy = {
     yearlyPlan: 'Vuosi',
     yearlyPrice: '69 €/vuosi',
     freeTrial: '7 päivän ilmainen kokeilu.',
-    bodyCompTitle: 'Järkevä kehonkoostumuksen seuranta',
+    bodyCompTitle: 'Järkevä kehonkoostumuksen ja vaiheen seuranta',
     bodyCompBody:
-      'Päivittäinen paino heittelee paljon. Macro Monk seuraa liukuvaa 7 päivän keskiarvoa, laskee viikkokohtaiset muutokset ja arvioi rasvattoman massan, kun kirjaat rasvaprosentin.',
+      'Päivittäinen paino heittelee paljon. Macro Monk seuraa liukuvaa 7 päivän keskiarvoa, laskee viikkokohtaiset muutokset, tukee vaiheita (rasvanpoltto, lihaskasvu, ylläpito) ja antaa palautetta siitä, miten eteneminen sujuu.',
     bodyCompPoint1: 'Liukuva 7 päivän keskiarvo vähentää päivittäistä kohinaa',
     bodyCompPoint2: 'Viikkokohtaiset muutokset näyttävät oikean trendin',
-    bodyCompPoint3: 'Rasvattoman massan seuranta, kun rasvaprosentti on kirjattu',
+    bodyCompPoint3: 'Vaihevalinta ja etenemisen palaute: rasvanpoltto, lihaskasvu tai ylläpito',
+    bodyCompPoint4: 'Rasvattoman massan seuranta, kun rasvaprosentti on kirjattu',
     quote:
       '"Macro Monk on tracker, jonka itse halusin: suora, nopea ja kunnioittava ihmisille, jotka suhtautuvat tuloksiin vakavasti."',
     tryMacroMonk: 'Kokeile Macro Monkia'
@@ -155,11 +160,15 @@ const render = () => {
 
       <section class="body-comp container reveal-delay">
         <h2>${t.bodyCompTitle}</h2>
+        <div class="feature-sticker" aria-hidden="true">
+          <img src="${noSpamDonut}" alt="${t.stickerAlt}" />
+        </div>
         <p class="body-comp-lede">${t.bodyCompBody}</p>
         <ul class="body-comp-list">
           <li>${t.bodyCompPoint1}</li>
           <li>${t.bodyCompPoint2}</li>
           <li>${t.bodyCompPoint3}</li>
+          <li>${t.bodyCompPoint4}</li>
         </ul>
       </section>
 
