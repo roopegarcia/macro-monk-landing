@@ -42,7 +42,6 @@ const copy = {
     snapTrends: 'Weekly + rolling trends',
     snapPhase: 'Phase coaching',
     snapGoals: 'Goal tracking',
-    snapAccess: 'Access and billing',
     formulaCaloriesLabel: 'Calories auto-calc',
     formulaLbmLabel: 'Lean body mass',
     formulaTrendLabel: 'Weekly trend',
@@ -66,10 +65,6 @@ const copy = {
     panelGoalsLine1: 'Set goal weight and optional goal body fat %.',
     panelGoalsLine2: 'Dashboard shows distance to goal and estimated weeks to goal.',
     panelGoalsLine3: 'Estimated target date is shown when enough data exists.',
-    panelAccessTitle: 'Access and billing',
-    panelAccessLine1: 'Access can come from trial, paid plan, or allowlist.',
-    panelAccessLine2: 'If inactive, the app shows purchase options.',
-    panelAccessLine3: 'Payment unlocks full access.',
     panelPracticeTitle: 'Practical logging notes',
     panelPracticeLine1: 'Use morning weigh-ins under similar conditions.',
     panelPracticeLine2: 'Log consistently for better trend quality.',
@@ -127,7 +122,6 @@ const copy = {
     snapTrends: 'Viikko- ja liukuvat trendit',
     snapPhase: 'Vaiheohjaus',
     snapGoals: 'Tavoitteet',
-    snapAccess: 'Käyttöoikeus ja maksu',
     formulaCaloriesLabel: 'Kalorit lasketaan automaattisesti',
     formulaLbmLabel: 'Rasvaton massa',
     formulaTrendLabel: 'Viikkotrendi',
@@ -151,10 +145,6 @@ const copy = {
     panelGoalsLine1: 'Aseta tavoitepaino ja halutessa tavoiterasvaprosentti.',
     panelGoalsLine2: 'Näkymä näyttää matkan tavoitteeseen ja arvion viikkojen määrästä.',
     panelGoalsLine3: 'Arvioitu tavoitepäivä näkyy, kun dataa on riittävästi.',
-    panelAccessTitle: 'Käyttöoikeus ja maksaminen',
-    panelAccessLine1: 'Käyttöoikeus voi tulla kokeilusta, maksusta tai sallittujen listasta.',
-    panelAccessLine2: 'Jos käyttö ei ole aktiivinen, sovellus näyttää ostovaihtoehdot.',
-    panelAccessLine3: 'Maksu avaa täyden käyttöoikeuden.',
     panelPracticeTitle: 'Käytännön kirjausvinkit',
     panelPracticeLine1: 'Punnitse aamulla samankaltaisissa olosuhteissa.',
     panelPracticeLine2: 'Kirjaa usein, jotta trenditarkkuus paranee.',
@@ -280,7 +270,6 @@ const render = () => {
           <article class="snapshot-card">${t.snapTrends}</article>
           <article class="snapshot-card">${t.snapPhase}</article>
           <article class="snapshot-card">${t.snapGoals}</article>
-          <article class="snapshot-card">${t.snapAccess}</article>
         </div>
 
         <div class="formula-grid">
@@ -337,14 +326,6 @@ const render = () => {
               <li>${t.panelGoalsLine1}</li>
               <li>${t.panelGoalsLine2}</li>
               <li>${t.panelGoalsLine3}</li>
-            </ul>
-          </details>
-          <details>
-            <summary>${t.panelAccessTitle}</summary>
-            <ul>
-              <li>${t.panelAccessLine1}</li>
-              <li>${t.panelAccessLine2}</li>
-              <li>${t.panelAccessLine3}</li>
             </ul>
           </details>
           <details>
