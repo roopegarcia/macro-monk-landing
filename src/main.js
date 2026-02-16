@@ -178,7 +178,7 @@ const render = () => {
       </section>
 
       <footer class="footer container">
-        <p class="footer-copy">© 2026 Roope Garcia. All rights reserved.</p>
+        <p class="footer-copy">© 2026 Macro Monk. All rights reserved.</p>
       </footer>
     </main>
   `;
