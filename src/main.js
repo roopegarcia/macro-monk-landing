@@ -23,11 +23,11 @@ const copy = {
     differenceBody2:
       'Copy previous day meals (because we both know you are eating mostly the same foods every day). Consistency is everything, and this is a long-term game.',
     pricingTitle: 'Simple pricing',
-    pricingIntro: 'Stripe payment. No hidden layers.',
-    monthlyPlan: 'Monthly',
-    monthlyPrice: '€8/month',
-    yearlyPlan: 'Yearly',
-    yearlyPrice: '€69/year',
+    pricingIntro: 'Stripe payment. No hidden layers. Gift cards available with the same amounts.',
+    monthlyPlan: '30 days',
+    monthlyPrice: '10 €',
+    yearlyPlan: '365 days',
+    yearlyPrice: '99 €',
     freeTrial: 'Free trial for 7 days.',
     bodyCompTitle: 'Body composition and phase tracking that make sense',
     bodyCompBody:
@@ -69,16 +69,13 @@ const copy = {
     panelPracticeLine1: 'Use morning weigh-ins under similar conditions.',
     panelPracticeLine2: 'Log consistently for better trend quality.',
     panelPracticeLine3: 'Treat phase ranges as guidance, not medical advice.',
-    phaseRangesTitle: 'Phase target ranges (kg/week)',
-    phaseCutTitle: 'Cut',
-    phaseCutRange: '-0.50 to -0.25',
-    phaseCutNote: 'Below range: too fast. Above range: too slow.',
-    phaseBulkTitle: 'Bulk',
-    phaseBulkRange: '+0.10 to +0.25',
-    phaseBulkNote: 'Above +0.30 triggers heavier warning.',
-    phaseMaintainTitle: 'Maintenance',
-    phaseMaintainRange: '-0.20 to +0.20',
-    phaseMaintainNote: 'Inside range: maintaining perfectly.',
+    coachingCardsTitle: 'Progress planning and coaching',
+    timelineCardTitle: 'Plan your timeline',
+    timelineCardBody: 'Plan your ideal weight loss or gain timeline with an easy slider.',
+    coachCardTitle: 'Coach guidance',
+    coachCardBody: 'Coach tracks your progress and gives hints and guides.',
+    exportCardTitle: 'Data export',
+    exportCardBody: 'Export your nutrition and progress data anytime for your own records or coach sharing.',
     featureGuideCta: 'Feature guide',
     quote:
       '"Macro Monk is the tracker I wanted: direct, fast, and respectful of people who are serious about results."',
@@ -103,11 +100,11 @@ const copy = {
     differenceBody2:
       'Kopioi edellisen päivän ateriat (koska molemmat tiedämme, että syöt useimmiten samoja ruokia joka päivä). Johdonmukaisuus on kaikki kaikessa, ja tämä on pitkä peli.',
     pricingTitle: 'Yksinkertainen hinnoittelu',
-    pricingIntro: 'Maksut Stripellä. Ei piilokerroksia.',
-    monthlyPlan: 'Kuukausi',
-    monthlyPrice: '8 €/kk',
-    yearlyPlan: 'Vuosi',
-    yearlyPrice: '69 €/vuosi',
+    pricingIntro: 'Maksut Stripellä. Ei piilokerroksia. Lahjakortit saatavilla samoilla hinnoilla.',
+    monthlyPlan: '30 päivää',
+    monthlyPrice: '10 €',
+    yearlyPlan: '365 päivää',
+    yearlyPrice: '99 €',
     freeTrial: '7 päivän ilmainen kokeilu.',
     bodyCompTitle: 'Järkevä kehonkoostumuksen ja vaiheen seuranta',
     bodyCompBody:
@@ -149,16 +146,13 @@ const copy = {
     panelPracticeLine1: 'Punnitse aamulla samankaltaisissa olosuhteissa.',
     panelPracticeLine2: 'Kirjaa usein, jotta trenditarkkuus paranee.',
     panelPracticeLine3: 'Käytä vaiherajoja ohjenuorana, ei lääketieteellisenä neuvona.',
-    phaseRangesTitle: 'Vaiheiden tavoitealueet (kg/viikko)',
-    phaseCutTitle: 'Rasvanpoltto',
-    phaseCutRange: '-0.50 ... -0.25',
-    phaseCutNote: 'Alapuolella: liian nopeasti. Yläpuolella: liian hitaasti.',
-    phaseBulkTitle: 'Lihaskasvu',
-    phaseBulkRange: '+0.10 ... +0.25',
-    phaseBulkNote: 'Yli +0.30 antaa vahvemman varoituksen.',
-    phaseMaintainTitle: 'Ylläpito',
-    phaseMaintainRange: '-0.20 ... +0.20',
-    phaseMaintainNote: 'Alueella pysyminen tarkoittaa onnistunutta ylläpitoa.',
+    coachingCardsTitle: 'Etenemisen suunnittelu ja valmennus',
+    timelineCardTitle: 'Suunnittele aikataulu',
+    timelineCardBody: 'Suunnittele ihanteellinen painonpudotus- tai nousuaikataulu helpolla liukusäätimellä.',
+    coachCardTitle: 'Valmentajan ohjaus',
+    coachCardBody: 'Valmentaja seuraa etenemistäsi ja antaa vinkkejä sekä ohjeita.',
+    exportCardTitle: 'Datan vienti',
+    exportCardBody: 'Vie ravinto- ja etenemisdatasi milloin tahansa omiin arkistoihin tai valmentajalle.',
     featureGuideCta: 'Ominaisuudet',
     quote:
       '"Macro Monk on tracker, jonka itse halusin: suora, nopea ja kunnioittava ihmisille, jotka suhtautuvat tuloksiin vakavasti."',
@@ -339,22 +333,19 @@ const render = () => {
         </div>
 
         <article class="phase-ranges">
-          <h3>${t.phaseRangesTitle}</h3>
+          <h3>${t.coachingCardsTitle}</h3>
           <div class="phase-ranges-grid">
             <div class="phase-range-card">
-              <p class="phase-name">${t.phaseCutTitle}</p>
-              <p class="phase-value">${t.phaseCutRange}</p>
-              <p class="phase-note">${t.phaseCutNote}</p>
+              <p class="phase-name">${t.timelineCardTitle}</p>
+              <p class="phase-note">${t.timelineCardBody}</p>
             </div>
             <div class="phase-range-card">
-              <p class="phase-name">${t.phaseBulkTitle}</p>
-              <p class="phase-value">${t.phaseBulkRange}</p>
-              <p class="phase-note">${t.phaseBulkNote}</p>
+              <p class="phase-name">${t.coachCardTitle}</p>
+              <p class="phase-note">${t.coachCardBody}</p>
             </div>
             <div class="phase-range-card">
-              <p class="phase-name">${t.phaseMaintainTitle}</p>
-              <p class="phase-value">${t.phaseMaintainRange}</p>
-              <p class="phase-note">${t.phaseMaintainNote}</p>
+              <p class="phase-name">${t.exportCardTitle}</p>
+              <p class="phase-note">${t.exportCardBody}</p>
             </div>
           </div>
         </article>
