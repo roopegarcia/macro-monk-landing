@@ -141,6 +141,34 @@ h1 {
   max-width: 16ch;
 }
 
+.hero-catchphrase {
+  margin: 0.75rem 0 0;
+  max-width: 54ch;
+  padding: 0.8rem 1rem;
+  background: linear-gradient(125deg, #fffdf9 0%, #ffe6be 100%);
+  border: 2px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 14px 24px rgba(76, 43, 23, 0.14);
+  color: #1b1710;
+  font-weight: 800;
+  line-height: 1.35;
+  position: relative;
+}
+
+.hero-catchphrase::before {
+  content: 'NEXT LEVEL';
+  position: absolute;
+  top: -0.65rem;
+  right: 0.75rem;
+  padding: 0.16rem 0.48rem;
+  border: 2px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  font-weight: 800;
+}
+
 .lede {
   margin: 1rem 0 0;
   max-width: 60ch;
@@ -551,6 +579,11 @@ h3 {
   .hero {
     grid-template-columns: 1fr;
     padding-top: 1.4rem;
+  }
+
+  .hero-catchphrase {
+    margin-top: 0.65rem;
+    padding: 0.72rem 0.82rem;
   }
 
   .hero-visual {

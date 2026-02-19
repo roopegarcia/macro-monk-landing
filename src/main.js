@@ -79,6 +79,8 @@ const copy = {
     featureGuideCta: 'Feature guide',
     quote:
       '"Macro Monk is the tracker I wanted: direct, fast, and respectful of people who are serious about results."',
+    catchPhrase:
+      'If you truly want to take the next step forward after you are out of tools, tracking your eating will take you to the next level.',
     tryMacroMonk: 'Try Macro Monk'
   },
   fi: {
@@ -86,7 +88,7 @@ const copy = {
     eyebrow: 'Treenaajille ja urheilijoille',
     h1: 'Seuraa makroja ja treeniä ilman mainoksia.',
     lede:
-      'Useimmat trackerit väittävät olevansa ilmaisia, mutta rajoittavat käyttöä pienillä limiteillä, mainoksilla ja loputtomilla "osta Pro" -kehotuksilla. Macro Monk pysyy puhtaana: käytännöllinen kirjaus, vakava seuranta, ei manipuloivaa myyntifunnelia.',
+      'Useimmat trackerit väittävät olevansa ilmaisia, mutta rajoittavat käyttöä pienillä limiteillä, mainoksilla ja loputtomilla "osta Pro" -kehotuksilla. Macro Monk pysyy puhtaana: käytännöllinen kirjaus, helppo seuranta. Elä normaalisti, treenaa, stressaa, koita nukkua ja toista. ',
     authLine: 'Google-kirjautuminen, ei salasanasäätöä.',
     stickerAlt: 'Ei spämmimyyntiä -tarra',
     startTracking: 'Aloita seuranta',
@@ -96,11 +98,11 @@ const copy = {
     differenceStep2: 'Syö hyvin ja elä normaalisti.',
     differenceStep3: 'Makrot ja kalorit päivittyvät, joten tiedät tarkasti paljonko päivälle on jäljellä.',
     differenceBody1:
-      'Rakenna oma ruokadatasi, jotta et ole epämääräisten ja usein väärien ravintoarvojen varassa. Ei valmiiden tietokantojen pakkoa. Vain omat arvosi. Kukaan ei rajoita item-määriä ja pakota Pro-seinän taakse.',
+      'Rakenna oma ruokadatasi, jotta et ole epämääräisten ja usein väärien ravintoarvojen varassa. Ei valmiiden tietokantojen pakkoa. Vain omat arvosi. Ei rajoituksia tuotteiden määrien luonnissa, ei myöskään PRO versiota.',
     differenceBody2:
-      'Kopioi edellisen päivän ateriat (koska molemmat tiedämme, että syöt useimmiten samoja ruokia joka päivä). Johdonmukaisuus on kaikki kaikessa, ja tämä on pitkä peli.',
+      'Kopioi edellisen päivän ateriat (koska molemmat tiedämme, että syöt useimmiten samoja ruokia joka päivä). Johdonmukaisuus on kaikki kaikessa, ja tämä on pitkä peli, for life.',
     pricingTitle: 'Yksinkertainen hinnoittelu',
-    pricingIntro: 'Maksut Stripellä. Ei piilokerroksia. Lahjakortit saatavilla samoilla hinnoilla.',
+    pricingIntro: 'Maksut Stripellä. Ei piilokuluja Lahjakortit saatavilla samoilla hinnoilla.',
     monthlyPlan: '30 päivää',
     monthlyPrice: '10 €',
     yearlyPlan: '365 päivää',
@@ -156,6 +158,8 @@ const copy = {
     featureGuideCta: 'Ominaisuudet',
     quote:
       '"Macro Monk on tracker, jonka itse halusin: suora, nopea ja kunnioittava ihmisille, jotka suhtautuvat tuloksiin vakavasti."',
+    catchPhrase:
+      'Jos haluat oikeasti ottaa seuraavan askeleen eteenpäin silloin kun muut työkalut eivät enää riitä, syömisen seuranta vie sinut seuraavalle tasolle.',
     tryMacroMonk: 'Kokeile Macro Monkia'
   }
 };
@@ -195,6 +199,7 @@ const render = () => {
         <div class="hero-copy reveal">
           <p class="eyebrow">${t.eyebrow}</p>
           <h1>${t.h1}</h1>
+          <p class="hero-catchphrase">${t.catchPhrase}</p>
           <p class="lede">${t.lede}</p>
           <div class="hero-actions">
             <a class="button primary" href="${appUrl}" target="_blank" rel="noreferrer">${t.startTracking}</a>
