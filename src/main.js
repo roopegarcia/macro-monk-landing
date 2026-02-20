@@ -2,6 +2,14 @@ import './style.css';
 import noSpamDonut from './assets/images/no-spam-donut-sticker.png';
 
 const appUrl = 'https://app.macromonk.fi/';
+const googleGIcon = `
+  <svg class="google-g-icon" viewBox="0 0 533.5 544.3" aria-hidden="true" focusable="false">
+    <path fill="#4285f4" d="M533.5 278.4c0-18.5-1.5-37.1-4.7-55.3H272v104.8h147.1c-6.1 33.9-25.4 63.8-53.8 82.8v68h86.9c51-47 80.3-116.3 80.3-200.3z" />
+    <path fill="#34a853" d="M272 544.3c73.5 0 135.5-24.1 180.7-65.6l-86.9-68c-24.2 16.5-55.4 25.9-93.8 25.9-71.1 0-131.3-48-152.9-112.5H29.5v70.1C75.8 485.9 168.3 544.3 272 544.3z" />
+    <path fill="#fbbc04" d="M119.1 324.1c-10.8-31.9-10.8-66.3 0-98.2v-70.1H29.5c-38.7 77-38.7 161.4 0 238.4l89.6-70.1z" />
+    <path fill="#ea4335" d="M272 107.7c40.8-.6 80.2 14.8 110.5 43.6l82.3-82.3C405.1 24.2 340.8-.4 272 0 168.3 0 75.8 58.4 29.5 150.1l89.6 70.1C140.7 155.7 200.9 107.7 272 107.7z" />
+  </svg>
+`;
 
 const copy = {
   en: {
@@ -10,7 +18,8 @@ const copy = {
     h1: 'Track macros and training without getting sold every 30 seconds.',
     lede:
       'Most trackers pretend to be free, then choke your setup with tiny limits, ads, and endless "buy Pro" popups. Macro Monk stays clean: practical logging, serious tracking, zero manipulative funnel.',
-    authLine: 'Google auth, no password-lost hassle.',
+    googleCta: 'Continue with Google',
+    authLine: 'No password-lost hassle.',
     stickerAlt: 'No-spam tracking sticker',
     startTracking: 'Start tracking',
     seeDifference: 'See the difference',
@@ -89,7 +98,8 @@ const copy = {
     h1: 'Seuraa makroja ja treeniä ilman mainoksia.',
     lede:
       'Useimmat trackerit väittävät olevansa ilmaisia, mutta rajoittavat käyttöä pienillä limiteillä, mainoksilla ja loputtomilla "osta Pro" -kehotuksilla. Macro Monk pysyy puhtaana: käytännöllinen kirjaus, helppo seuranta. Elä normaalisti, treenaa, stressaa, koita nukkua ja toista. ',
-    authLine: 'Google-kirjautuminen, ei salasanasäätöä.',
+    googleCta: 'Jatka Googlella',
+    authLine: 'Ei salasanasäätöä.',
     stickerAlt: 'Ei spämmimyyntiä -tarra',
     startTracking: 'Aloita seuranta',
     seeDifference: 'Katso ero',
@@ -217,7 +227,13 @@ const render = () => {
 
       <section id="see-the-difference" class="difference container reveal">
         <h2>${t.differenceTitle}</h2>
-        <p class="difference-auth">${t.authLine}</p>
+        <div class="difference-auth">
+          <a class="google-auth-button" href="${appUrl}" target="_blank" rel="noreferrer" aria-label="${t.googleCta}">
+            ${googleGIcon}
+            <span>${t.googleCta}</span>
+          </a>
+          <p class="auth-line">${t.authLine}</p>
+        </div>
         <ol class="difference-steps">
           <li>${t.differenceStep1}</li>
           <li>${t.differenceStep2}</li>

@@ -264,12 +264,50 @@ h2 {
 
 .difference-auth {
   margin: 0 0 0.9rem;
-  display: inline-block;
-  padding: 0.4rem 0.65rem;
-  border: 1px dashed var(--line);
-  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.google-auth-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.52rem;
+  min-height: 2.5rem;
+  padding: 0.58rem 0.95rem;
+  border: 2px solid color-mix(in srgb, var(--line) 32%, transparent);
+  border-radius: 12px;
+  background: #fff;
+  color: #1f1f1f;
+  text-decoration: none;
+  font-weight: 800;
+  line-height: 1;
+  box-shadow: 0 8px 18px rgba(35, 31, 22, 0.09);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.google-auth-button:hover {
+  transform: translateY(-1px);
+  border-color: color-mix(in srgb, var(--line) 48%, transparent);
+  box-shadow: 0 10px 22px rgba(35, 31, 22, 0.13);
+}
+
+.google-auth-button:focus-visible {
+  outline: 3px solid #1a73e8;
+  outline-offset: 2px;
+}
+
+.google-g-icon {
+  width: 1.1rem;
+  height: 1.1rem;
+  flex: 0 0 auto;
+}
+
+.auth-line {
+  margin: 0;
   font-weight: 700;
-  background: rgba(255, 255, 255, 0.5);
+  color: var(--muted);
 }
 
 .difference-steps li {
@@ -622,6 +660,11 @@ h3 {
 
   .pricing-grid {
     grid-template-columns: 1fr;
+  }
+
+  .difference-auth {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .promise {
