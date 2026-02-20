@@ -51,6 +51,7 @@ const copy = {
     snapTrends: 'Weekly + rolling trends',
     snapPhase: 'Phase coaching',
     snapGoals: 'Goal tracking',
+    snapFavorites: 'Save your favorite meals and reuse them easily.',
     formulaCaloriesLabel: 'Calories auto-calc',
     formulaLbmLabel: 'Lean body mass',
     formulaTrendLabel: 'Weekly trend',
@@ -129,8 +130,9 @@ const copy = {
     snapNutrition: 'Makrojen kirjaus',
     snapMetrics: 'Kehomittarit + rasvaton massa',
     snapTrends: 'Viikko- ja liukuvat trendit',
-    snapPhase: 'Vaiheohjaus',
-    snapGoals: 'Tavoitteet',
+    snapPhase: 'Offseason/Cut: suunnittele kesto helposti liukusäätimellä',
+    snapGoals: 'Tavoitteet ja etenemisen seuranta',
+    snapFavorites: 'Lisää ateria suosikkeihin ⭐️ ja käytä uudelleen',
     formulaCaloriesLabel: 'Kalorit lasketaan automaattisesti',
     formulaLbmLabel: 'Rasvaton massa',
     formulaTrendLabel: 'Viikkotrendi',
@@ -285,6 +287,7 @@ const render = () => {
           <article class="snapshot-card">${t.snapTrends}</article>
           <article class="snapshot-card">${t.snapPhase}</article>
           <article class="snapshot-card">${t.snapGoals}</article>
+          <article class="snapshot-card">${t.snapFavorites}</article>
         </div>
 
         <div class="formula-grid">
