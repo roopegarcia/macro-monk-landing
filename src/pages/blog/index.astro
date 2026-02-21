@@ -1,0 +1,57 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const entries = (await getCollection('blog', ({ data }) => !data.draft && data.lang === 'en')).sort(
+  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
+
+const dateFormat = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' });
+---
+
+<BaseLayout
+  title="Macro Monk Blog"
+  description="Training, nutrition, and body composition content for serious lifters."
+  lang="en"
+  switchToEn="/blog/"
+  switchToFi="/blog/fi/"
+  homeUrl="/"
+  blogUrl="/blog/"
+>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Macro Monk Journal</p>
+      <h1>Practical training and macro tracking content for serious progress.</h1>
+      <p class="hero-catchphrase">
+        If you truly want to take the next step forward, tracking your eating is the lever that changes
+        results.
+      </p>
+      <p class="lede">
+        This blog supports the app launch with useful articles you can apply right away. No fake urgency,
+        no clickbait, just useful guidance for lifters and athletes.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="https://app.macromonk.fi/" target="_blank" rel="noreferrer">
+          Try Macro Monk
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="logo-frame">
+        <img src="/macro-monk-favicon.png" alt="Macro Monk emblem" />
+      </div>
+    </div>
+  </section>
+
+  <section class="posts-grid" aria-label="Latest posts">
+    {
+      entries.map((entry) => (
+        <a class="post-card" href={`/blog/${entry.slug}/`}>
+          <h2>{entry.data.title}</h2>
+          <p>{entry.data.description}</p>
+          <span class="meta">{dateFormat.format(entry.data.pubDate)}</span>
+        </a>
+      ))
+    }
+  </section>
+</BaseLayout>

@@ -1,44 +1,29 @@
-# Macro Monk Landing
+# Macro Monk Marketing + Blog
 
 <p align="center">
   <img src="public/macro-monk.png" alt="Macro Monk logo" width="360" />
 </p>
 
-Landing page for **Macro Monk**: a macro, training, and body composition tracker for people who already take tracking seriously.
+Astro site for **Macro Monk** with bilingual landing + blog content.
 
-## Live URLs
+## Production Path
 
-- Landing: https://macromonk.fi/
-- App: https://app.macromonk.fi/
+- Landing (EN): `https://macromonk.fi/`
+- Landing (FI): `https://macromonk.fi/fi/`
+- Blog (EN): `https://macromonk.fi/blog/`
+- Blog (FI): `https://macromonk.fi/blog/fi/`
 
-## Core Message
+## Content Focus
 
-Macro Monk is built to avoid manipulative app patterns:
-
-- No fake scarcity like "only 3 custom meals/items"
-- No ad bombardment and no constant "buy Pro" interruptions
-- Practical tracking focused on consistency and results
-
-## Body Composition Tracking
-
-Macro Monk includes trend-based body composition logic:
-
-- Tracks **running 7-day averages** because daily fluctuations are noisy
-- Calculates **weekly changes** for more reliable progress interpretation
-- Calculates **lean body mass** when the user logs **body-fat %**
-
-## Landing Features
-
-- EN/FI language toggle with browser-locale default and local persistence
-- Product-focused hero and differentiation sections
-- Body composition section explaining trend-based metrics
-- Subtle branded footer with ownership text
+- Training and nutrition guidance for lifters and athletes
+- Body-composition trend explanations
+- App marketing content that links to `https://app.macromonk.fi/`
+- EN/FI language switcher across landing and blog
 
 ## Tech Stack
-
-- Vite
-- Vanilla JavaScript
-- CSS
+- Astro
+- Markdown content collections
+- Static output suitable for Vercel
 
 ## Local Development
 

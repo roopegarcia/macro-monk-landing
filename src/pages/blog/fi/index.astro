@@ -1,0 +1,55 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const entries = (await getCollection('blog', ({ data }) => !data.draft && data.lang === 'fi')).sort(
+  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
+
+const dateFormat = new Intl.DateTimeFormat('fi-FI', { dateStyle: 'long' });
+---
+
+<BaseLayout
+  title="Macro Monk Blogi"
+  description="Treeni-, ravinto- ja kehonkoostumussisältöä tavoitteellisille treenaajille."
+  lang="fi"
+  switchToEn="/blog/"
+  switchToFi="/blog/fi/"
+  homeUrl="/fi/"
+  blogUrl="/blog/fi/"
+>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Macro Monk Blogi</p>
+      <h1>Käytännön sisältöä makroista, treenistä ja kehonkoostumuksesta.</h1>
+      <p class="hero-catchphrase">
+        Sisältö keskittyy toteutettaviin asioihin ilman turhaa hypeä, jotta tulokset pysyvät suunnassa.
+      </p>
+      <p class="lede">
+        Blogi tukee sovelluksen käyttöä selkeillä ohjeilla. Ei clickbaitia, vain käytännönläheistä sisältöä.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="https://app.macromonk.fi/" target="_blank" rel="noreferrer">
+          Kokeile Macro Monkia
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="logo-frame">
+        <img src="/macro-monk-favicon.png" alt="Macro Monk symboli" />
+      </div>
+    </div>
+  </section>
+
+  <section class="posts-grid" aria-label="Uusimmat artikkelit">
+    {
+      entries.map((entry) => (
+        <a class="post-card" href={`/blog/fi/${entry.slug}/`}>
+          <h2>{entry.data.title}</h2>
+          <p>{entry.data.description}</p>
+          <span class="meta">{dateFormat.format(entry.data.pubDate)}</span>
+        </a>
+      ))
+    }
+  </section>
+</BaseLayout>

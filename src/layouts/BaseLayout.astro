@@ -1,0 +1,63 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  lang?: 'en' | 'fi';
+  switchToEn?: string;
+  switchToFi?: string;
+  homeUrl?: string;
+  blogUrl?: string;
+}
+
+const { title, description, lang = 'en', switchToEn = '/', switchToFi = '/fi/', homeUrl, blogUrl } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL;
+const isFi = lang === 'fi';
+const resolvedHomeUrl = homeUrl ?? (isFi ? `${baseUrl}fi/` : `${baseUrl}`);
+const resolvedBlogUrl = blogUrl ?? (isFi ? `${baseUrl}blog/fi/` : `${baseUrl}blog/`);
+const homeLabel = isFi ? 'Etusivu' : 'Home';
+const blogLabel = 'Blog';
+const openAppLabel = isFi ? 'Avaa sovellus' : 'Open app';
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href={`${baseUrl}macro-monk-favicon.svg`} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="backdrop" aria-hidden="true"></div>
+      <header class="topbar container">
+        <div class="brand-wrap">
+          <a class="brand" href={resolvedHomeUrl}>
+            <img src={`${baseUrl}macro-monk-logo.png`} alt="Macro Monk" />
+          </a>
+          <p class="brand-slogan">For lifters who already know their shit 😄</p>
+        </div>
+        <nav class="top-actions" aria-label="Primary">
+          <div class="lang-switch" role="group" aria-label="Language selector">
+            <a class:list={['lang-btn', { active: lang === 'en' }]} href={switchToEn}>EN</a>
+            <a class:list={['lang-btn', { active: lang === 'fi' }]} href={switchToFi}>FI</a>
+          </div>
+          <a class="button ghost" href={resolvedHomeUrl}>{homeLabel}</a>
+          <a class="button ghost" href={resolvedBlogUrl}>{blogLabel}</a>
+          <a class="button primary" href="https://app.macromonk.fi/" target="_blank" rel="noreferrer">
+            {openAppLabel}
+          </a>
+        </nav>
+      </header>
+      <main class="container">
+        <slot />
+      </main>
+      <footer class="container footer">
+        <p>© 2026 Macro Monk. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

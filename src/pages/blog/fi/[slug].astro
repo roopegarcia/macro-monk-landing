@@ -1,0 +1,46 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+  const posts = allPosts.filter((post) => post.data.lang === 'fi');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: {
+      post,
+      enSlug:
+        allPosts.find(
+          (candidate) =>
+            candidate.data.lang === 'en' && candidate.data.translationKey === post.data.translationKey
+        )?.slug ?? null
+    }
+  }));
+}
+
+const { post, enSlug } = Astro.props;
+const { Content } = await render(post);
+const dateFormat = new Intl.DateTimeFormat('fi-FI', { dateStyle: 'long' });
+---
+
+<BaseLayout
+  title={`${post.data.title} | Macro Monk Blogi`}
+  description={post.data.description}
+  lang="fi"
+  switchToEn={enSlug ? `/blog/${enSlug}/` : '/blog/'}
+  switchToFi={`/blog/fi/${post.slug}/`}
+  homeUrl="/fi/"
+  blogUrl="/blog/fi/"
+>
+  <article class="post-article">
+    <p class="eyebrow">Macro Monk Blogi</p>
+    <h1>{post.data.title}</h1>
+    <p class="meta">
+      Julkaistu {dateFormat.format(post.data.pubDate)}
+      {post.data.updatedDate ? ` • Päivitetty ${dateFormat.format(post.data.updatedDate)}` : ''}
+    </p>
+    <div class="post-content">
+      <Content />
+    </div>
+  </article>
+</BaseLayout>
