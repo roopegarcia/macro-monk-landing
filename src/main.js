@@ -48,47 +48,23 @@ const copy = {
     bodyCompPoint2: 'Weekly change calculations for real trend insight',
     bodyCompPoint3: 'Phase selection with progress feedback: Cut, Bulk, or Maintain',
     bodyCompPoint4: 'Lean body mass tracking when body-fat % is logged',
-    featureGuideTitle: 'Feature guide without the overwhelm',
-    snapNutrition: 'Nutrition logging',
-    snapMetrics: 'Body metrics + LBM',
-    snapTrends: 'Weekly + rolling trends',
-    snapPhase: 'Phase coaching',
-    snapGoals: 'Goal tracking',
-    snapFavorites: 'Save your favorite meals and reuse them easily.',
-    formulaCaloriesLabel: 'Calories auto-calc',
-    formulaLbmLabel: 'Lean body mass',
-    formulaTrendLabel: 'Weekly trend',
-    panelNutritionTitle: 'Nutrition tracking',
-    panelNutritionLine1: 'Log protein, carbs, and fat per meal item.',
-    panelNutritionLine2: 'Optionally override calories per item.',
-    panelNutritionLine3: 'Daily totals show eaten and remaining vs target.',
-    panelMetricsTitle: 'Body metrics and LBM',
-    panelMetricsLine1: 'Log daily weight (kg), body fat % (optional), and waist (cm, optional).',
-    panelMetricsLine2: 'LBM is shown when body fat % exists for that day.',
-    panelMetricsLine3: 'Missing body fat % means no LBM value for that day.',
-    panelTrendsTitle: 'Weekly and rolling trends',
-    panelTrendsLine1: 'Weekly view averages each metric across Mon-Sun.',
-    panelTrendsLine2: 'Rolling view averages selected day plus previous 6 days.',
-    panelTrendsLine3: 'Averages reduce noise from water, sodium, meal timing, and stress.',
-    panelPhaseTitle: 'Phase tracking (Cut / Bulk / Maintenance)',
-    panelPhaseLine1: 'Phase is optional and can be left unset.',
-    panelPhaseLine2: 'Weekly trend uses current 7-day average minus previous 7-day average.',
-    panelPhaseLine3: 'Trend unit is shown as kg/week.',
-    panelGoalsTitle: 'Goals and timelines',
-    panelGoalsLine1: 'Set goal weight and optional goal body fat %.',
-    panelGoalsLine2: 'Dashboard shows distance to goal and estimated weeks to goal.',
-    panelGoalsLine3: 'Estimated target date is shown when enough data exists.',
-    panelPracticeTitle: 'Practical logging notes',
-    panelPracticeLine1: 'Use morning weigh-ins under similar conditions.',
-    panelPracticeLine2: 'Log consistently for better trend quality.',
-    panelPracticeLine3: 'Treat phase ranges as guidance, not medical advice.',
-    coachingCardsTitle: 'Progress planning and coaching',
-    timelineCardTitle: 'Plan your timeline',
-    timelineCardBody: 'Plan your ideal weight loss or gain timeline with an easy slider.',
-    coachCardTitle: 'Coach guidance',
-    coachCardBody: 'Coach tracks your progress and gives hints and guides.',
-    exportCardTitle: 'Data export',
-    exportCardBody: 'Export your nutrition and progress data anytime for your own records or coach sharing.',
+    featureGuideTitle: 'Features built for real progress',
+    featureCard1Title: 'Daily dashboard with actionable coaching',
+    featureCard1Body: 'Should you train today? Get a clear recommendation and "Coach Roope" guidance.',
+    featureCard2Title: 'Smart recovery system',
+    featureCard2Body:
+      'Sleep, readiness, stress, soreness, and cardio/training load are combined into one daily decision.',
+    featureCard3Title: 'Phase intelligence',
+    featureCard3Body:
+      'Cut, bulk, and maintenance check-ins with progress insights, phase-start tracking, and a macro calculator.',
+    featureCard4Title: 'Fast meal logging built for lifters',
+    featureCard4Body: 'Reusable favorite meals, quick add/edit, and your own personal food database.',
+    featureCard5Title: 'Real trend signal',
+    featureCard5Body: 'Weekly and rolling 7-day averages reduce daily noise and guide better adjustments.',
+    featureCard6Title: 'Practical for mobile daily use',
+    featureCard6Body: 'Installable web app (PWA), iOS-friendly UX, and clean one-hand navigation.',
+    featureCard7Title: 'Privacy-first and user-controlled',
+    featureCard7Body: 'Simple account flow, exportable data, and a transparent policy.',
     featureGuideCta: 'Feature guide',
     quote:
       '"Macro Monk is the tracker I wanted: direct, fast, and respectful of people who are serious about results."',
@@ -129,47 +105,23 @@ const copy = {
     bodyCompPoint2: 'Viikkokohtaiset muutokset näyttävät oikean trendin',
     bodyCompPoint3: 'Vaihevalinta ja etenemisen palaute: rasvanpoltto, lihaskasvu tai ylläpito',
     bodyCompPoint4: 'Rasvattoman massan seuranta, kun rasvaprosentti on kirjattu',
-    featureGuideTitle: 'Ominaisuudet',
-    snapNutrition: 'Makrojen kirjaus',
-    snapMetrics: 'Kehomittarit + rasvaton massa',
-    snapTrends: 'Viikko- ja liukuvat trendit',
-    snapPhase: 'Offseason/Cut: suunnittele kesto helposti liukusäätimellä',
-    snapGoals: 'Tavoitteet ja etenemisen seuranta',
-    snapFavorites: 'Lisää ateria suosikkeihin ⭐️ ja käytä uudelleen',
-    formulaCaloriesLabel: 'Kalorit lasketaan automaattisesti',
-    formulaLbmLabel: 'Rasvaton massa',
-    formulaTrendLabel: 'Viikkotrendi',
-    panelNutritionTitle: 'Makrojen seuranta',
-    panelNutritionLine1: 'Kirjaa proteiini, hiilarit ja rasva per ateria.',
-    panelNutritionLine2: 'Voit halutessasi yliajaa kalorit.',
-    panelNutritionLine3: 'Päivän yhteenvedossa näkyy syöty ja jäljellä vs tavoite.',
-    panelMetricsTitle: 'Kehomittarit ja rasvaton massa',
-    panelMetricsLine1: 'Kirjaa päivittäin paino (kg), rasvaprosentti (valinnainen) ja vyötärö (valinnainen).',
-    panelMetricsLine2: 'Rasvaton massa näkyy, kun rasvaprosentti on kirjattu samalle päivälle.',
-    panelMetricsLine3: 'Jos rasvaprosentti puuttuu, rasvatonta massaa ei lasketa kyseiselle päivälle.',
-    panelTrendsTitle: 'Viikko- ja liukuvat trendit',
-    panelTrendsLine1: 'Viikkonäkymä keskiarvoistaa arvot ma-su ajalta.',
-    panelTrendsLine2: 'Liukuva näkymä käyttää valittua päivää + 6 edellistä päivää.',
-    panelTrendsLine3: 'Keskiarvot vähentävät veden, suolan, ateriarytmin ja stressin kohinaa.',
-    panelPhaseTitle: 'Vaiheseuranta (rasvanpoltto / lihaskasvu / ylläpito)',
-    panelPhaseLine1: 'Vaihe on valinnainen ja sen voi jättää asettamatta.',
-    panelPhaseLine2: 'Viikkotrendi on nykyinen 7 päivän keskiarvo miinus edellinen 7 päivän keskiarvo.',
-    panelPhaseLine3: 'Trendin yksikkö on kg/viikko.',
-    panelGoalsTitle: 'Tavoitteet ja aikataulu',
-    panelGoalsLine1: 'Aseta tavoitepaino ja halutessa tavoiterasvaprosentti.',
-    panelGoalsLine2: 'Näkymä näyttää matkan tavoitteeseen ja arvion viikkojen määrästä.',
-    panelGoalsLine3: 'Arvioitu tavoitepäivä näkyy, kun dataa on riittävästi.',
-    panelPracticeTitle: 'Käytännön kirjausvinkit',
-    panelPracticeLine1: 'Punnitse aamulla samankaltaisissa olosuhteissa.',
-    panelPracticeLine2: 'Kirjaa usein, jotta trenditarkkuus paranee.',
-    panelPracticeLine3: 'Käytä vaiherajoja ohjenuorana, ei lääketieteellisenä neuvona.',
-    coachingCardsTitle: 'Etenemisen suunnittelu ja valmennus',
-    timelineCardTitle: 'Suunnittele aikataulu',
-    timelineCardBody: 'Suunnittele ihanteellinen painonpudotus- tai nousuaikataulu helpolla liukusäätimellä.',
-    coachCardTitle: 'Valmentajan ohjaus',
-    coachCardBody: 'Valmentaja seuraa etenemistäsi ja antaa vinkkejä sekä ohjeita.',
-    exportCardTitle: 'Datan vienti',
-    exportCardBody: 'Vie ravinto- ja etenemisdatasi milloin tahansa omiin arkistoihin tai valmentajalle.',
+    featureGuideTitle: 'Ominaisuudet oikeaan etenemiseen',
+    featureCard1Title: 'Päivittäinen dashboard + valmennus',
+    featureCard1Body: 'Pitäisikö treenata tänään? Saat suosituksen ja "Coach Roope" -ohjauksen.',
+    featureCard2Title: 'Fiksu palautumisjärjestelmä',
+    featureCard2Body:
+      'Uni, valmius, stressi, lihaskipu ja cardio/treenikuorma yhdistetään yhdeksi päivän päätökseksi.',
+    featureCard3Title: 'Vaiheäly',
+    featureCard3Body:
+      'Cut, bulk ja ylläpito -check-init, etenemisen insightit, vaiheen aloituksen seuranta ja makrolaskuri.',
+    featureCard4Title: 'Nopea ateriakirjaus treenaajille',
+    featureCard4Body: 'Uudelleenkäytettävät suosikkiateriat, nopeat lisäys/muokkaus-toiminnot ja oma ruokadata.',
+    featureCard5Title: 'Oikea trendsignaali',
+    featureCard5Body: 'Viikko- ja liukuvat 7 päivän keskiarvot vähentävät kohinaa ja tukevat säätöjä.',
+    featureCard6Title: 'Käytännöllinen mobiilissa',
+    featureCard6Body: 'Asennettava web-app (PWA), iOS-ystävällinen UX ja selkeä yhden käden navigointi.',
+    featureCard7Title: 'Yksityisyys ensin',
+    featureCard7Body: 'Selkeä tili- ja kirjautuminen, vietävä data ja läpinäkyvä tietosuojalinja.',
     featureGuideCta: 'Ominaisuudet',
     quote:
       '"Macro Monk on tracker, jonka itse halusin: suora, nopea ja kunnioittava ihmisille, jotka suhtautuvat tuloksiin vakavasti."',
@@ -284,98 +236,36 @@ const render = () => {
       <section id="feature-guide" class="feature-guide container reveal-delay">
         <h2>${t.featureGuideTitle}</h2>
 
-        <div class="snapshot-grid">
-          <article class="snapshot-card">${t.snapNutrition}</article>
-          <article class="snapshot-card">${t.snapMetrics}</article>
-          <article class="snapshot-card">${t.snapTrends}</article>
-          <article class="snapshot-card">${t.snapPhase}</article>
-          <article class="snapshot-card">${t.snapGoals}</article>
-          <article class="snapshot-card">${t.snapFavorites}</article>
-        </div>
-
-        <div class="formula-grid">
-          <article class="formula-card">
-            <p class="formula-label">${t.formulaCaloriesLabel}</p>
-            <code>calories = protein*4 + carbs*4 + fat*9</code>
+        <div class="feature-cards">
+          <article class="feature-card">
+            <h3>${t.featureCard1Title}</h3>
+            <p>${t.featureCard1Body}</p>
           </article>
-          <article class="formula-card">
-            <p class="formula-label">${t.formulaLbmLabel}</p>
-            <code>lbm = weight_kg * (1 - body_fat_percent/100)</code>
+          <article class="feature-card">
+            <h3>${t.featureCard2Title}</h3>
+            <p>${t.featureCard2Body}</p>
           </article>
-          <article class="formula-card">
-            <p class="formula-label">${t.formulaTrendLabel}</p>
-            <code>weekly_trend = current_7d_avg - previous_7d_avg</code>
+          <article class="feature-card">
+            <h3>${t.featureCard3Title}</h3>
+            <p>${t.featureCard3Body}</p>
+          </article>
+          <article class="feature-card">
+            <h3>${t.featureCard4Title}</h3>
+            <p>${t.featureCard4Body}</p>
+          </article>
+          <article class="feature-card">
+            <h3>${t.featureCard5Title}</h3>
+            <p>${t.featureCard5Body}</p>
+          </article>
+          <article class="feature-card">
+            <h3>${t.featureCard6Title}</h3>
+            <p>${t.featureCard6Body}</p>
+          </article>
+          <article class="feature-card">
+            <h3>${t.featureCard7Title}</h3>
+            <p>${t.featureCard7Body}</p>
           </article>
         </div>
-
-        <div class="guide-accordion">
-          <details open>
-            <summary>${t.panelNutritionTitle}</summary>
-            <ul>
-              <li>${t.panelNutritionLine1}</li>
-              <li>${t.panelNutritionLine2}</li>
-              <li>${t.panelNutritionLine3}</li>
-            </ul>
-          </details>
-          <details>
-            <summary>${t.panelMetricsTitle}</summary>
-            <ul>
-              <li>${t.panelMetricsLine1}</li>
-              <li>${t.panelMetricsLine2}</li>
-              <li>${t.panelMetricsLine3}</li>
-            </ul>
-          </details>
-          <details>
-            <summary>${t.panelTrendsTitle}</summary>
-            <ul>
-              <li>${t.panelTrendsLine1}</li>
-              <li>${t.panelTrendsLine2}</li>
-              <li>${t.panelTrendsLine3}</li>
-            </ul>
-          </details>
-          <details>
-            <summary>${t.panelPhaseTitle}</summary>
-            <ul>
-              <li>${t.panelPhaseLine1}</li>
-              <li>${t.panelPhaseLine2}</li>
-              <li>${t.panelPhaseLine3}</li>
-            </ul>
-          </details>
-          <details>
-            <summary>${t.panelGoalsTitle}</summary>
-            <ul>
-              <li>${t.panelGoalsLine1}</li>
-              <li>${t.panelGoalsLine2}</li>
-              <li>${t.panelGoalsLine3}</li>
-            </ul>
-          </details>
-          <details>
-            <summary>${t.panelPracticeTitle}</summary>
-            <ul>
-              <li>${t.panelPracticeLine1}</li>
-              <li>${t.panelPracticeLine2}</li>
-              <li>${t.panelPracticeLine3}</li>
-            </ul>
-          </details>
-        </div>
-
-        <article class="phase-ranges">
-          <h3>${t.coachingCardsTitle}</h3>
-          <div class="phase-ranges-grid">
-            <div class="phase-range-card">
-              <p class="phase-name">${t.timelineCardTitle}</p>
-              <p class="phase-note">${t.timelineCardBody}</p>
-            </div>
-            <div class="phase-range-card">
-              <p class="phase-name">${t.coachCardTitle}</p>
-              <p class="phase-note">${t.coachCardBody}</p>
-            </div>
-            <div class="phase-range-card">
-              <p class="phase-name">${t.exportCardTitle}</p>
-              <p class="phase-note">${t.exportCardBody}</p>
-            </div>
-          </div>
-        </article>
       </section>
 
       <section class="promise container reveal-delay">
