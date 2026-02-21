@@ -1,5 +1,8 @@
+import { inject } from '@vercel/analytics';
 import './style.css';
 import noSpamDonut from './assets/images/no-spam-donut-sticker.png';
+
+inject();
 
 const appUrl = 'https://app.macromonk.fi/';
 const googleGIcon = `
