@@ -50,7 +50,7 @@ const copy = {
     bodyCompPoint4: 'Lean body mass tracking when body-fat % is logged',
     featureGuideTitle: 'Features built for real progress',
     featureCard1Title: 'Daily dashboard with actionable coaching',
-    featureCard1Body: 'Should you train today? Get a clear recommendation and "Coach Roope" guidance.',
+    featureCard1Body: 'Should you train today? Get a clear recommendation and "Coach" guidance.',
     featureCard2Title: 'Smart recovery system',
     featureCard2Body:
       'Sleep, readiness, stress, soreness, and cardio/training load are combined into one daily decision.',
@@ -107,7 +107,7 @@ const copy = {
     bodyCompPoint4: 'Rasvattoman massan seuranta, kun rasvaprosentti on kirjattu',
     featureGuideTitle: 'Ominaisuudet oikeaan etenemiseen',
     featureCard1Title: 'Päivittäinen dashboard + valmennus',
-    featureCard1Body: 'Pitäisikö treenata tänään? Saat suosituksen ja "Coach Roope" -ohjauksen.',
+    featureCard1Body: 'Pitäisikö treenata tänään? Saat suosituksen ja "Coach" -ohjauksen.',
     featureCard2Title: 'Fiksu palautumisjärjestelmä',
     featureCard2Body:
       'Uni, valmius, stressi, lihaskipu ja cardio/treenikuorma yhdistetään yhdeksi päivän päätökseksi.',
