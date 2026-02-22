@@ -46,8 +46,6 @@ Suosikit, oletusruokatietokanta, omat ruoat ja nopeat filtterit oikeaan päivitt
 
 Kevyt, nopea, ei turhaa meteliä. Vain signaalit ja työkalut, joilla on merkitystä.
 
-## Minusta
-
 ## Kuka Macro Monkin takana on (ja miksi se on olemassa)
 
 Olen kiireinen isä, aviomies, omakotiasuja, kitaristi, valmentaja ja devaaja. Toisin sanoen: minulla on kaikki tavalliset aikuisen syyt lopettaa treenaaminen.

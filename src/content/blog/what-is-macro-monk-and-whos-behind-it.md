@@ -46,9 +46,6 @@ Favorites, default food database, personal foods, and quick filters built for re
 
 Lightweight, fast, no noise. Just the signals and tools that matter.
 
-## About me
-
--
 ## Who’s behind Macro Monk (and why it exists)
 
 I’m a busy dad, husband, homeowner, guitarist, coach, and a full-time developer. In other words: I have every normal adult excuse to quit training.
