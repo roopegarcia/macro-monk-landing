@@ -5,6 +5,7 @@ pubDate: 2026-02-10
 tags: ["rasvanpoltto", "ravinto", "suunnittelu"]
 lang: "fi"
 translationKey: "first-week-cut-checklist"
+draft: true
 ---
 
 Et tarvitse täydellistä viikkoa. Tarvitset toistettavan viikon.

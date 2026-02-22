@@ -5,6 +5,7 @@ pubDate: 2025-12-15
 tags: ["body-composition", "data", "progress"]
 lang: "en"
 translationKey: "why-7-day-averages-beat-daily-scale-stress"
+draft: true
 ---
 
 Scale weight is noisy. Water, digestion, sodium, and sleep can move the number fast.

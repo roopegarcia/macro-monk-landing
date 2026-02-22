@@ -5,6 +5,7 @@ pubDate: 2026-02-10
 tags: ["cut", "nutrition", "planning"]
 lang: "en"
 translationKey: "first-week-cut-checklist"
+draft: true
 ---
 
 You do not need a perfect week. You need a repeatable week.

@@ -5,6 +5,7 @@ pubDate: 2026-01-28
 tags: ["makrot", "tavat", "seuranta"]
 lang: "fi"
 translationKey: "how-to-track-macros-without-burnout"
+draft: true
 ---
 
 Makroseuranta toimii vain silloin, kun sitä jaksaa tehdä pitkään.

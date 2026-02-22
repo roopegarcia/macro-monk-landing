@@ -5,6 +5,7 @@ pubDate: 2025-12-15
 tags: ["kehonkoostumus", "data", "edistyminen"]
 lang: "fi"
 translationKey: "why-7-day-averages-beat-daily-scale-stress"
+draft: true
 ---
 
 Päiväpaino on kohinainen mittari. Nestetasapaino, ruuansulatus, suola ja uni heiluttavat lukemaa nopeasti.
