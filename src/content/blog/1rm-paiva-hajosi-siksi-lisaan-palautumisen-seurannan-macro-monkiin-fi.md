@@ -3,8 +3,8 @@ title: "1RM-päiväni hajosi. Siksi lisään palautumisen seurannan Macro Monkki
 description: "Aloitin kalorivajeen, uni heikkeni ja 1RM-päivä paljasti väistämättömän: palautumisvelan. Tässä mitä tapahtui ja miten Macro Monk auttaa havaitsemaan sen aiemmin."
 pubDate: 2026-02-22
 tags: ["palautuminen", "kalorivaje", "treeni", "1rm", "macro monk"]
-featuredImage: "/macro-monk.png"
-featuredImageAlt: "Paikkamerkkikuva palautumisen seurantaa käsittelevään blogipostaukseen"
+featuredImage: "/blog/featured/1rm-22-2-26.webp"
+featuredImageAlt: "1RM-paivan treenisessio"
 lang: "fi"
 translationKey: "my-1rm-day-fell-apart-recovery-tracking"
 draft: false
@@ -75,13 +75,11 @@ Sitten Macro Monk tekee tylsän mutta tärkeän osan: **trendittää datan, pist
 
 Tavoite ei ole tehdä sinusta pehmeää. Tavoite on pitää sinut vahvana.
 
-## YouTube-upotus (vaihda oma video)
-
 <div class="video-embed">
   <iframe
     width="560"
     height="315"
-    src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+    src="https://www.youtube.com/embed/OZsFECVUJGc"
     title="Palautumisen seurannan päivitys"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

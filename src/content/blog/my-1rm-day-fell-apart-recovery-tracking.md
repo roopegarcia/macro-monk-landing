@@ -3,8 +3,8 @@ title: "My 1RM Day Fell Apart. That’s Why I’m Adding Recovery Tracking to Ma
 description: "I started cutting calories, sleep went bad, and my 1RM day exposed the inevitable: recovery debt. Here’s what happened and how Macro Monk will help you spot it earlier."
 pubDate: 2026-02-22
 tags: ["recovery", "cutting", "training", "1rm", "macro monk"]
-featuredImage: "/macro-monk.png"
-featuredImageAlt: "Placeholder cover image for the recovery tracking blog post"
+featuredImage: "/blog/featured/1rm-22-2-26.webp"
+featuredImageAlt: "1RM day training session"
 lang: "en"
 translationKey: "my-1rm-day-fell-apart-recovery-tracking"
 draft: false
@@ -75,13 +75,11 @@ Then Macro Monk will do the boring but important part: **trend it, score it, and
 
 The goal is not to make you soft. The goal is to keep you strong.
 
-## YouTube Embed (replace with your video)
-
 <div class="video-embed">
   <iframe
     width="560"
     height="315"
-    src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+    src="https://www.youtube.com/embed/OZsFECVUJGc"
     title="Recovery tracking update"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
