@@ -21,6 +21,8 @@ export async function getStaticPaths() {
 const { post, enSlug } = Astro.props;
 const { Content } = await render(post);
 const dateFormat = new Intl.DateTimeFormat('fi-FI', { dateStyle: 'long' });
+const publishedIso = post.data.pubDate.toISOString();
+const modifiedIso = post.data.updatedDate ? post.data.updatedDate.toISOString() : publishedIso;
 ---
 
 <BaseLayout
@@ -31,6 +33,31 @@ const dateFormat = new Intl.DateTimeFormat('fi-FI', { dateStyle: 'long' });
   switchToFi={`/blog/fi/${post.slug}/`}
   homeUrl="/fi/"
   blogUrl="/blog/fi/"
+  canonicalPath={`/blog/fi/${post.slug}/`}
+  alternateEnPath={enSlug ? `/blog/${enSlug}/` : '/blog/'}
+  alternateFiPath={`/blog/fi/${post.slug}/`}
+  ogType="article"
+  ogImagePath={post.data.featuredImage ?? '/macro-monk.png'}
+  publishedTime={publishedIso}
+  modifiedTime={modifiedIso}
+  structuredData={{
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.data.title,
+    description: post.data.description,
+    datePublished: publishedIso,
+    dateModified: modifiedIso,
+    inLanguage: 'fi',
+    url: `https://macromonk.fi/blog/fi/${post.slug}/`,
+    author: {
+      '@type': 'Organization',
+      name: 'Macro Monk'
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Macro Monk'
+    }
+  }}
 >
   <article class="post-article">
     <p class="eyebrow">Macro Monk Blogi</p>
@@ -39,6 +66,13 @@ const dateFormat = new Intl.DateTimeFormat('fi-FI', { dateStyle: 'long' });
       Julkaistu {dateFormat.format(post.data.pubDate)}
       {post.data.updatedDate ? ` • Päivitetty ${dateFormat.format(post.data.updatedDate)}` : ''}
     </p>
+    {post.data.featuredImage && (
+      <img
+        class="post-featured-image"
+        src={post.data.featuredImage}
+        alt={post.data.featuredImageAlt ?? post.data.title}
+      />
+    )}
     <div class="post-content">
       <Content />
     </div>

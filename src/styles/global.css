@@ -242,7 +242,7 @@ h2 {
 
 .hero-visual {
   position: relative;
-  max-width: 430px;
+  max-width: 470px;
   justify-self: end;
 }
 
@@ -253,6 +253,19 @@ h2 {
 
 .logo-frame img {
   filter: drop-shadow(0 18px 26px rgba(88, 41, 22, 0.24));
+}
+
+.promo-frame {
+  padding: 0.45rem;
+  border-radius: 18px;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.promo-image {
+  width: 100%;
+  border-radius: 12px;
 }
 
 .posts-grid {
@@ -351,6 +364,15 @@ h2 {
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
+.post-card-image {
+  width: 100%;
+  height: clamp(150px, 24vw, 240px);
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid color-mix(in srgb, var(--line) 34%, transparent);
+  margin-bottom: 0.8rem;
+}
+
 .post-card:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow);
@@ -389,6 +411,14 @@ h2 {
   margin-top: 1rem;
   line-height: 1.7;
   max-width: 72ch;
+}
+
+.post-featured-image {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 12px;
+  border: 2px solid color-mix(in srgb, var(--line) 34%, transparent);
+  box-shadow: 0 10px 20px rgba(35, 31, 22, 0.08);
 }
 
 .post-content h2 {

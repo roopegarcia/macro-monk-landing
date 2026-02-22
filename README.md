@@ -32,6 +32,16 @@ npm install
 npm run dev
 ```
 
+## Writing New Posts
+
+- Use templates:
+  - `src/content/blog/templates/post-template-en.md`
+  - `src/content/blog/templates/post-template-fi.md`
+- Store post images in `public/blog/featured/` and `public/blog/instructions/`.
+- Set optional featured image frontmatter fields:
+  - `featuredImage`
+  - `featuredImageAlt`
+
 Build for production:
 
 ```bash

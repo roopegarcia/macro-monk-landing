@@ -17,6 +17,17 @@ const dateFormat = new Intl.DateTimeFormat('fi-FI', { dateStyle: 'long' });
   switchToFi="/blog/fi/"
   homeUrl="/fi/"
   blogUrl="/blog/fi/"
+  canonicalPath="/blog/fi/"
+  alternateEnPath="/blog/"
+  alternateFiPath="/blog/fi/"
+  structuredData={{
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: 'Macro Monk Blogi',
+    description: 'Treeni-, ravinto- ja kehonkoostumussisältöä tavoitteellisille treenaajille.',
+    url: 'https://macromonk.fi/blog/fi/',
+    inLanguage: 'fi'
+  }}
 >
   <section class="hero">
     <div class="hero-copy">
@@ -45,6 +56,14 @@ const dateFormat = new Intl.DateTimeFormat('fi-FI', { dateStyle: 'long' });
     {
       entries.map((entry) => (
         <a class="post-card" href={`/blog/fi/${entry.slug}/`}>
+          {entry.data.featuredImage && (
+            <img
+              class="post-card-image"
+              src={entry.data.featuredImage}
+              alt={entry.data.featuredImageAlt ?? entry.data.title}
+              loading="lazy"
+            />
+          )}
           <h2>{entry.data.title}</h2>
           <p>{entry.data.description}</p>
           <span class="meta">{dateFormat.format(entry.data.pubDate)}</span>

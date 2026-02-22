@@ -1,5 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import sevenFreeEn from '../assets/images/7-free-en.png';
+
+const siteUrl = 'https://macromonk.fi/';
 ---
 
 <BaseLayout
@@ -10,6 +13,24 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   switchToFi="/fi/"
   homeUrl="/"
   blogUrl="/blog/"
+  canonicalPath="/"
+  alternateEnPath="/"
+  alternateFiPath="/fi/"
+  structuredData={{
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'Macro Monk',
+    applicationCategory: 'HealthApplication',
+    operatingSystem: 'Web',
+    description:
+      'Track macros, training, and body composition without fake scarcity or ad-heavy upsells.',
+    url: siteUrl,
+    offers: {
+      '@type': 'Offer',
+      price: '10',
+      priceCurrency: 'EUR'
+    }
+  }}
 >
   <section class="hero">
     <div class="hero-copy">
@@ -30,8 +51,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
     </div>
     <div class="hero-visual">
-      <div class="logo-frame">
-        <img src="/macro-monk-favicon.png" alt="Macro Monk emblem" />
+      <div class="promo-frame">
+        <img class="promo-image" src={sevenFreeEn.src} alt="7-day free trial offer for Macro Monk" />
       </div>
     </div>
   </section>
@@ -45,7 +66,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </ol>
     <p class="difference-note">
       Build your own food database and avoid low-quality crowdsourced entries. No fake item caps, no forced
-      Pro walls.
+      Pro walls. No automatic renewal.
     </p>
   </section>
 
