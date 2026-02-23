@@ -1,7 +1,7 @@
 ---
 title: "Macro Monk: For lifters who already know their $hit 😄"
 description: "Käytännöllinen makro- ja treenisovellus, joka rakentuu yhden päivittäisen kysymyksen ympärille: mitä minun pitäisi tehdä tänään kehittyäkseni ilman loppuunpalamista?"
-pubDate: 2026-02-22
+pubDate: 2026-02-20
 tags: ["macro monk", "esittely", "perustaja", "treeni"]
 featuredImage: "/blog/featured/element-featured.webp"
 featuredImageAlt: "Macro Monkin sovellusnakyma"
@@ -44,11 +44,11 @@ Suosikit, oletusruokatietokanta, omat ruoat ja nopeat filtterit oikeaan päivitt
 
 ### Puhdas käyttökokemus
 
-Kevyt, nopea, ei turhaa meteliä. Vain signaalit ja työkalut, joilla on merkitystä.
+Kevyt, nopea, ei turhaa meteliä. Vain trendit ja työkalut, joilla on merkitystä.
 
 ## Kuka Macro Monkin takana on (ja miksi se on olemassa)
 
-Olen kiireinen isä, aviomies, omakotiasuja, kitaristi, valmentaja ja devaaja. Toisin sanoen: minulla on kaikki tavalliset aikuisen syyt lopettaa treenaaminen.
+Olen kiireinen iskä, aviomies, omakotitaloilija, kitaristi ja devaaja. Toisin sanoen: minulla on kaikki yleisimmät syyt lopettaa treenaaminen.
 
 Mutta tykkään siitä ihan liikaa antaakseni sen hiipua.
 
@@ -58,9 +58,9 @@ Se rakentuu saliversioon pyhästä kolminaisuudesta: **treeni, ravinto ja palaut
 
 Olen tehnyt paljon virheitä. Olen kiristellyt liian kovaa, sivuuttanut unen ja oppinut kantapään kautta, että "kurinalaisuus" ei korvaa palautumista. Macro Monk on yritykseni paketoida nämä opit työkaluksi, joka auttaa muita treenaajia pysymään johdonmukaisina, onnistumaan ja nauttimaan prosessista myös iän karttuessa.
 
-Jos yrität rakentaa voimaa ja hyvää elämää samaan aikaan, rakensin tämän juuri sinulle.
+Jos yrität rakentaa voimaa, lihasta ja hyvää elämää samaan aikaan, rakensin tämän juuri sinulle.
 
-Macro Monk on yhden miehen projekti. Olen epäonnistunut enemmän kertoja kuin pystyn laskemaan, aloittanut uudelleen monta kertaa ja jatkanut, koska missio on yksinkertainen:
+Macro Monk on yhden miehen projekti. Olen epäonnistunut useammin kuin pystyn laskemaan, aloittanut uudelleen monta kertaa ja jatkanut, koska missio on yksinkertainen:
 
 **Auttaa ihmisiä pysymään johdonmukaisina ja treenaamaan läpi elämän.**
 
