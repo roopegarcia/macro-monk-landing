@@ -1,7 +1,7 @@
 ---
 title: "Macro Monk: For lifters who already know their $hit 😄"
 description: "A practical macro and training app built around one daily question: what should I do today to keep progressing without burning out?"
-pubDate: 2026-02-22
+pubDate: 2026-02-20
 tags: ["macro monk", "about", "founder", "training"]
 featuredImage: "/blog/featured/element-featured.webp"
 featuredImageAlt: "Macro Monk app preview"
