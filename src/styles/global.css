@@ -76,7 +76,15 @@ a {
 }
 
 .brand {
-  width: min(260px, 55vw);
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.brand-image {
+  width: clamp(74px, 12vw, 110px);
+  height: auto;
+  border-radius: 0;
 }
 
 .brand-wrap {

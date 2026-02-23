@@ -77,6 +77,9 @@ const structuredDataItems = structuredData ? (Array.isArray(structuredData) ? st
     <meta name="twitter:image" content={ogImageUrl} />
     {publishedTime && <meta property="article:published_time" content={publishedTime} />}
     {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
+    <link rel="icon" type="image/png" sizes="32x32" href={`${baseUrl}icons/favicon-32x32.png`} />
+    <link rel="icon" type="image/png" sizes="16x16" href={`${baseUrl}icons/favicon-16x16.png`} />
+    <link rel="apple-touch-icon" sizes="180x180" href={`${baseUrl}icons/apple-touch-icon.png`} />
     <link rel="icon" type="image/svg+xml" href={`${baseUrl}macro-monk-favicon.svg`} />
     <title>{title}</title>
     {
@@ -91,7 +94,7 @@ const structuredDataItems = structuredData ? (Array.isArray(structuredData) ? st
       <header class="topbar container">
         <div class="brand-wrap">
           <a class="brand" href={resolvedHomeUrl}>
-            <img src={`${baseUrl}macro-monk-logo.png`} alt="Macro Monk" />
+            <img class="brand-image" src={`${baseUrl}macro-monk-logo-sharp.png`} alt="Macro Monk" />
           </a>
           <p class="brand-slogan">For lifters who already know their shit 😄</p>
         </div>
