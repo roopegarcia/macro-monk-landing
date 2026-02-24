@@ -99,15 +99,15 @@ const structuredDataItems = structuredData ? (Array.isArray(structuredData) ? st
           <p class="brand-slogan">For lifters who already know their shit 😄</p>
         </div>
         <nav class="top-actions" aria-label="Primary">
-          <div class="lang-switch" role="group" aria-label="Language selector">
-            <a class:list={['lang-btn', { active: lang === 'en' }]} href={switchToEn}>EN</a>
-            <a class:list={['lang-btn', { active: lang === 'fi' }]} href={switchToFi}>FI</a>
-          </div>
           <a class="button ghost" href={resolvedHomeUrl}>{homeLabel}</a>
           <a class="button ghost" href={resolvedBlogUrl}>{blogLabel}</a>
           <a class="button primary" href="https://app.macromonk.fi/" target="_blank" rel="noreferrer">
             {openAppLabel}
           </a>
+          <div class="lang-switch" role="group" aria-label="Language selector">
+            <a class:list={['lang-btn', { active: lang === 'en' }]} href={switchToEn}>EN</a>
+            <a class:list={['lang-btn', { active: lang === 'fi' }]} href={switchToFi}>FI</a>
+          </div>
         </nav>
       </header>
       <main class="container">
