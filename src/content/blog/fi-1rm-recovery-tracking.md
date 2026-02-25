@@ -1,5 +1,5 @@
 ---
-title: "1 Rep Max-päiväni hajosi. Siksi lisään palautumisen seurannan Macro Monkkiin."
+title: "1Rep Max-päiväni hajosi. Siksi lisään palautumisen seurannan Macro Monkkiin."
 description: "Aloitin kalorivajeen, uni heikkeni ja 1RM-päivä paljasti väistämättömän: palautumisvelan. Tässä mitä tapahtui ja miten Macro Monk auttaa havaitsemaan sen aiemmin."
 pubDate: 2026-02-22
 tags: ["palautuminen", "kalorivaje", "treeni", "1rm", "macro monk"]
@@ -92,11 +92,11 @@ Tavoite ei ole tehdä sinusta pehmeää. Tavoite on pitää sinut vahvana.
 
 ## Yhteenveto
 
-Jos olet kalorivajeella ja uni alkaa lipsua, älä odota ihmettä salilla.
+Jos olet kalorivajeella ja uni alkaa lipsua, älä odota että nostot romahtavat ennen kuin opit läksyn.
 
 Voima ei katoa yhdessä päivässä. Se vuotaa hitaasti. Palautumisvelka on korkoa korolle.
 
-Macro Monkiin tulee palautumisen seuranta, koska haluan työkalun, joka kertoo **ennen kuin** 1RM-päivästä tulee tilinteon päivä.
+Macro Monkiin tulee palautumisen seuranta, koska haluan työkalun, joka kertoo **ennen kuin** 1RM-päivä muuttuu reality checkiksi.
 
 Jos haluat kokeilla, sovellus on täällä:
 **https://app.macromonk.fi**

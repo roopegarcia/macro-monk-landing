@@ -12,19 +12,19 @@ draft: false
 
 Today was 1RM day.
 
-I walked into the gym with that familiar electricity. The bar looks the same as always, the plates clang the same, and your brain starts doing the usual math: *If I hit X today, the next block is going to be spicy.*
+I walked into the gym like always. The bar looks the same, the plates clang the same, and a calm voice lands in your head: *14 weeks of work end here.*
 
-But the lifts didn’t feel spicy. They felt... expensive.
+But the lifts didn’t feel explosive. They felt... like wet cement.
 
-Not "bad warmup" expensive. More like "your body is running a hidden overdraft account" expensive.
+Not "bad warmup" type heavy. More like "your body is running on overdrive."
 
 ## The setup (how I got here)
 
 This one wasn’t mysterious. It was classic lifter dominoes:
 
-1. I started cutting calories.
+1. I looked in the mirror and saw my big gut.
 2. Sleep got worse.
-3. Training stress stayed the same.
+3. Training load and ego stayed the same.
 4. And eventually the bill arrived.
 
 The annoying part is how delayed it is. You don’t always feel it on day one. Sometimes you don’t even feel it on week one. You feel it later, when performance starts leaking out of the corners.
