@@ -2,20 +2,28 @@
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 
+const routeSlug = (entry: { slug?: string; id: string }) =>
+  entry.slug ?? entry.id.replace(/\.md$/, '');
+
 export async function getStaticPaths() {
   const allPosts = await getCollection('blog', ({ data }) => !data.draft);
   const posts = allPosts.filter((post) => post.data.lang === 'fi');
-  return posts.map((post) => ({
-    params: { slug: post.slug },
-    props: {
-      post,
-      enSlug:
-        allPosts.find(
-          (candidate) =>
-            candidate.data.lang === 'en' && candidate.data.translationKey === post.data.translationKey
-        )?.slug ?? null
-    }
-  }));
+
+  return posts.map((post) => {
+    const translation = allPosts.find(
+      (candidate) => candidate.data.lang === 'en' && candidate.data.translationKey === post.data.translationKey
+    );
+    const postSlug = post.slug ?? post.id.replace(/\.md$/, '');
+    const enSlug = translation ? translation.slug ?? translation.id.replace(/\.md$/, '') : null;
+
+    return {
+      params: { slug: postSlug },
+      props: {
+        post,
+        enSlug
+      }
+    };
+  });
 }
 
 const { post, enSlug } = Astro.props;
@@ -30,12 +38,12 @@ const modifiedIso = post.data.updatedDate ? post.data.updatedDate.toISOString() 
   description={post.data.description}
   lang="fi"
   switchToEn={enSlug ? `/blog/${enSlug}/` : '/blog/'}
-  switchToFi={`/blog/fi/${post.slug}/`}
+  switchToFi={`/blog/fi/${routeSlug(post)}/`}
   homeUrl="/fi/"
   blogUrl="/blog/fi/"
-  canonicalPath={`/blog/fi/${post.slug}/`}
+  canonicalPath={`/blog/fi/${routeSlug(post)}/`}
   alternateEnPath={enSlug ? `/blog/${enSlug}/` : '/blog/'}
-  alternateFiPath={`/blog/fi/${post.slug}/`}
+  alternateFiPath={`/blog/fi/${routeSlug(post)}/`}
   ogType="article"
   ogImagePath={post.data.featuredImage ?? '/macro-monk.png'}
   publishedTime={publishedIso}
@@ -48,7 +56,7 @@ const modifiedIso = post.data.updatedDate ? post.data.updatedDate.toISOString() 
     datePublished: publishedIso,
     dateModified: modifiedIso,
     inLanguage: 'fi',
-    url: `https://macromonk.fi/blog/fi/${post.slug}/`,
+    url: `https://macromonk.fi/blog/fi/${routeSlug(post)}/`,
     author: {
       '@type': 'Organization',
       name: 'Macro Monk'

@@ -4,9 +4,8 @@ description: "New in Macro Monk: a built-in schedule, food database units for No
 pubDate: 2026-02-25
 updatedDate: 2026-02-25
 tags: ["product update", "nutrition", "training", "recovery"]
-featuredImage: "/blog/featured/element-featured.webp"
+featuredImage: "/blog/featured/macro-monk-features.webp"
 featuredImageAlt: "Macro Monk update visual placeholder"
-slug: "schedule-food-database-units-and-simplified-dashboard"
 lang: "en"
 translationKey: "schedule-food-database-units-simplified-dashboard"
 draft: false
@@ -22,7 +21,7 @@ This makes planning and logging more practical when your daily workflow is based
 
 ## New: Simplified Today dashboard with user preferences
 
-Today’s dashboard now adapts to how you use Macro Monk.
+Today’s dashboard now adapts to how you use Macro Monk
 
 You can choose to:
 

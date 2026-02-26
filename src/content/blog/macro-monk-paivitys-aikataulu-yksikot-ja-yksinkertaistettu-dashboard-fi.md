@@ -4,9 +4,8 @@ description: "Uutta Macro Monkissa: sisäänrakennettu aikataulu, ruokatietokann
 pubDate: 2026-02-25
 updatedDate: 2026-02-25
 tags: ["tuotepäivitys", "ravinto", "treeni", "palautuminen"]
-featuredImage: "/blog/featured/element-featured.webp"
+featuredImage: "/blog/featured/macro-monk-features.webp"
 featuredImageAlt: "Macro Monk -päivityksen paikkamerkkikuva"
-slug: "schedule-food-database-units-and-simplified-dashboard-fi"
 lang: "fi"
 translationKey: "schedule-food-database-units-simplified-dashboard"
 draft: false
@@ -14,7 +13,7 @@ draft: false
 
 Julkaisin muutaman ison parannuksen, jotka tekevät Macro Monkin päivittäisestä käytöstä sujuvampaa.
 
-## Uutta: Kalenteri + ruokatietokannan yksiköt Pohjois-Amerikan ystävillemme
+## Uutta: Kalenteri + ruokatietokannan yksiköt Pohjois-Amerikan ystävillemme 
 
 Voit nyt käyttää kalenteria ravintoseurannan rinnalla ja kirjata ruokia yksiköillä, jotka sopivat paremmin Pohjois-Amerikan arkeen.
 
@@ -29,7 +28,7 @@ Voit valita:
 - Seurannan vain ravinnolle
 - Koko näkymän: ravinto, treeni ja palautuminen
 
-Näin dashboard pysyy selkeänä ja keskittyy siihen, mitä oikeasti haluat seurata.
+Näin dashboard pysyy selkeänä ja keskittyy siihen, mitä oikeasti haluat seurata..
 
 ## Yhteenveto
 

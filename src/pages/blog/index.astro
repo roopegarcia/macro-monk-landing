@@ -5,6 +5,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 const entries = (await getCollection('blog', ({ data }) => !data.draft && data.lang === 'en')).sort(
   (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
 );
+const routeSlug = (entry: { slug?: string; id: string }) =>
+  entry.slug ?? entry.id.replace(/\.md$/, '');
 
 const dateFormat = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' });
 ---
@@ -57,7 +59,7 @@ const dateFormat = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' });
   <section class="posts-grid" aria-label="Latest posts">
     {
       entries.map((entry) => (
-        <a class="post-card" href={`/blog/${entry.slug}/`}>
+        <a class="post-card" href={`/blog/${routeSlug(entry)}/`}>
           {entry.data.featuredImage && (
             <img
               class="post-card-image"
