@@ -1,27 +1,28 @@
 ---
-title: "Macro Monk -päivitys: Aikataulu, ruokatietokannan yksiköt ja yksinkertaisempi dashboard"
+title: "Macro Monk -päivitys: Kalenteri, ruokatietokannan yksiköt ja yksinkertaisempi hallinta"
 description: "Uutta Macro Monkissa: sisäänrakennettu aikataulu, ruokatietokannan yksiköt Pohjois-Amerikan käyttäjille ja yksinkertaistettu dashboard omien valintojen mukaan."
 pubDate: 2026-02-25
 updatedDate: 2026-02-25
 tags: ["tuotepäivitys", "ravinto", "treeni", "palautuminen"]
 featuredImage: "/blog/featured/element-featured.webp"
 featuredImageAlt: "Macro Monk -päivityksen paikkamerkkikuva"
+slug: "schedule-food-database-units-and-simplified-dashboard-fi"
 lang: "fi"
 translationKey: "schedule-food-database-units-simplified-dashboard"
-draft: true
+draft: false
 ---
 
-Julkaisimme muutaman ison parannuksen, jotka tekevät Macro Monkin päivittäisestä käytöstä sujuvampaa.
+Julkaisin muutaman ison parannuksen, jotka tekevät Macro Monkin päivittäisestä käytöstä sujuvampaa.
 
-## Uutta: Aikataulu + ruokatietokannan yksiköt Pohjois-Amerikan käyttäjille
+## Uutta: Kalenteri + ruokatietokannan yksiköt Pohjois-Amerikan ystävillemme
 
-Voit nyt käyttää aikataulua ravintoseurannan rinnalla ja kirjata ruokia yksiköillä, jotka sopivat paremmin Pohjois-Amerikan arkeen.
+Voit nyt käyttää kalenteria ravintoseurannan rinnalla ja kirjata ruokia yksiköillä, jotka sopivat paremmin Pohjois-Amerikan arkeen.
 
-Tämä tekee suunnittelusta ja kirjaamisesta käytännöllisempää, kun päivittäinen rytmi perustuu yleisiin USA/Canada-annosyksiköihin.
+Tämä tekee suunnittelusta ja kirjaamisesta käytännöllisempää, kun päivittäinen rytmi perustuu yleisiin USA/Kanada-annosyksiköihin.
 
-## Uutta: Yksinkertaistettu Today-dashboard omilla valinnoilla
+## Uutta: Yksinkertaistettu Tänään-paneeli 😄 omilla valinnoilla
 
-Today-dashboard mukautuu nyt siihen, miten haluat käyttää Macro Monkia.
+Tänään-paneeli mukautuu nyt siihen, miten haluat käyttää Macro Monkia.
 
 Voit valita:
 
@@ -32,4 +33,4 @@ Näin dashboard pysyy selkeänä ja keskittyy siihen, mitä oikeasti haluat seur
 
 ## Yhteenveto
 
-Macro Monk tarjoaa nyt paremman yksikkötuen Pohjois-Amerikan ruokakirjaukseen sekä selkeämmän Today-dashboardin, joka mukautuu omaan seurantatyyliisi.
+Macro Monk tarjoaa nyt paremman yksikkötuen Pohjois-Amerikan ruokakirjaukseen sekä selkeämmän hallinnan, joka mukautuu omaan seurantatyyliisi.

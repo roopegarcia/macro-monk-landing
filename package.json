@@ -4,12 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "clean:cache": "rm -rf .astro",
+    "predev": "npm run clean:cache",
+    "prebuild": "npm run clean:cache",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^5.2.0",
+    "astro": "^5.18.0",
     "zod": "^3.25.76"
   },
   "dependencies": {

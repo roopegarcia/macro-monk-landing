@@ -6,14 +6,15 @@ updatedDate: 2026-02-25
 tags: ["product update", "nutrition", "training", "recovery"]
 featuredImage: "/blog/featured/element-featured.webp"
 featuredImageAlt: "Macro Monk update visual placeholder"
+slug: "schedule-food-database-units-and-simplified-dashboard"
 lang: "en"
 translationKey: "schedule-food-database-units-simplified-dashboard"
-draft: true
+draft: false
 ---
 
 We shipped a few important improvements to make Macro Monk easier to use day to day.
 
-## New: Schedule + food database units for North American users
+## New: Schedule + food database units for North American users.
 
 You can now use the schedule alongside nutrition tracking and log food using unit options that fit North American habits better.
 

@@ -5,10 +5,10 @@ pubDate: 2026-02-22
 tags: ["palautuminen", "kalorivaje", "treeni", "1rm", "macro monk"]
 featuredImage: "/blog/featured/1rm-22-2-26.webp"
 featuredImageAlt: "1RM-paivan treenisessio"
-slug: "1rm-paivani-hajosi-palautumisen-seuranta-fi"
+slug: "1rm-paiva-hajosi-siksi-lisaan-palautumisen-seurannan-macro-monkiin-fi"
 lang: "fi"
 translationKey: "my-1rm-day-fell-apart-recovery-tracking"
-draft: false
+draft: true
 ---
 
 Tänään oli 1RM-päivä.
